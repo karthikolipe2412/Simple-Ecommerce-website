@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="./styles1.css" rel="stylesheet">
+    
+</head>
+<body>
+        
+    <div class="signupform">
+        
+        <%if(locals.registered){%>
+            <div class="error-alert">
+                <img src="./alarm.png"><%= registered%>
+            </div>
+        <%}else{%>
+            <h2>Create Account</h2>
+        <%}%>
+        <%if(locals.useregistered){%>
+            <div class="error-alert">
+                <img src="./alarm.png"><%= useregistered%>
+            </div>
+        <%}%>
+            
+        <form onsubmit="validation()" action="/signup" method="post">
+            <label for="firstname">First Name</label><br>
+            <input type="text" name="firstname" id="nameInp" class="form-control mb-3" placeholder="First Name.....">
+            <label>User Name</label><br>
+            <input type="text" name="Username" id="userInp" class="form-control mb-3" placeholder="User Name.....">
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="emailInp" class="form-control mb-3" placeholder="Email...">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="passInp" class="form-control mb-3" placeholder="Password..">
+            <button type="submit" id="sub_btn" class="btn w-100 btn-outline-primary mb-3">Register</button>
+            <a href="/signin" class="badge badge-secondary py-2 w-100 h-25px my-3">Login</a>     
+        </form>
+    </div>
+    <script>
+        var name1 = document.getElementById('nameInp');
+        var username1 = document.getElementById('userInp');
+        var email1 = document.getElementById('emailInp');
+        function validation(){
+            let nameregex = /^[A-Za-z]+$/;
+            let emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let useregex = /^[a-zA-Z0-9]{5,12}$/;
+
+            if(!nameregex.test(name1.value.trim())){
+                alert("Enter Valid Name")
+                return false;
+            }
+            
+            if(!emailregex.test(email1.value)){
+                alert("Enter a valid email")
+                return false;
+            }
+            if(!useregex.test(username1.value)){
+                alert("Enter a valid username with minimum 8 and maximum 12 characters.")
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

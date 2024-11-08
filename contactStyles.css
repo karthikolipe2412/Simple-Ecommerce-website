@@ -1,0 +1,30 @@
+body{ 
+    height:100vh;
+    width:100vw;
+    margin:0px;
+}
+h1{
+    padding-left: 25px;
+}
+input[type=text],input[type=email],textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+input[type=submit]{
+    padding: 5px 12px;
+    background-color: forestgreen;
+    color:white;
+}
+input[type=submit]:hover{
+    background-color:limegreen;
+}
+.contact{
+    padding:25px;
+}

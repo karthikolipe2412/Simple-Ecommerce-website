@@ -1,2 +1,5 @@
-# Simple-Ecommerce-website
- Developed an e-commerce website using Node.js, Express js and Using Firebase as Database.Web Development: Created About Us Page using HTML &amp; CSS, Simple Responsive website in HTML and CSS
+# Simple-Ecommerce-Using-Nodejs-and-Firebase
+Using nodejs and firebase a simple e-commerce website is made where you can signup and signin and logout from wesite.
+
+
+youtube link:::  https://youtu.be/zwbkJTDsQus

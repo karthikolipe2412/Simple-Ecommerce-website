@@ -1,0 +1,60 @@
+a:hover{
+    background-color: rgb(83, 145, 215);
+    
+}
+
+.page-start{
+    width: 100;
+    height:400px;
+    background-image: linear-gradient(to bottom, rgb(196, 14, 212),rgb(140, 254, 220));
+}
+.welcome h1{
+    margin-top: 100px;
+    padding: 20px 0px;
+
+}
+.welcome h1,h3,p{
+    color:white;
+    margin-left:100px;
+}
+.welcome{
+    width:50%;
+    float: left;
+}
+.welcome img{
+    float: right;
+    margin-right: 80px;
+}
+.carousel-item img{
+    height:500px;
+}
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar-nav li{
+    display: flex;
+    align-items:center;
+    justify-content:end;
+}
+.carousel-caption h4{
+    margin-top: 20px;
+    color: white;
+}
+.cards{
+    display: flex;
+    
+}
+.card-1{
+    width:25%;
+    padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.cards h2{
+    padding:15px;
+    text-align: center;
+}
+.card-1 img{
+    height:350px;
+}

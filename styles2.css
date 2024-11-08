@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0; 
+    background-image: url(./o4k9q.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loginform{
+    width:350px;
+    height: 410px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border-radius: 10px;
+    padding:15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.loginform h1{
+    text-align:center;
+    letter-spacing: 1.2px;
+}
+form input{
+    width: 90%;
+    padding:5px;
+    margin-left: 12px;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+form label{
+    position:relative;
+    margin-left: 15px;
+    font-weight:bold;
+    letter-spacing: 0.8px;
+}
+form button{
+    margin-top: 18px;
+    margin-left: 12px;
+    width:95%;
+    padding:6px;
+    text-align: center;
+    background-color:cadetblue;
+    border-radius: 5px;
+    color:white;
+    transition: .1s ease-in-out;
+}
+button:hover{
+    background-color:rgb(190, 211, 190);
+    
+}
+form p{
+    margin-top: 5px;
+    text-align: center;
+}
+.success-alert{
+    background-color: lightgreen;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:6px 0px;
+    text-align: center;
+    padding:4px;
+}
+.success-alert img{
+    height: 15px;
+    margin-left: 5px;
+}

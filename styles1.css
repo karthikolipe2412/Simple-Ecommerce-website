@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+    margin:0px;
+    background-image: url(./M2A8V.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signupform{
+    width:400px;
+    height: 465px;
+    left:60%;
+    position: absolute;
+    border-radius: 10px;
+    padding:20px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color:snow;
+}
+.signupform h2{
+    text-align:center;
+    letter-spacing: 1.2px;
+}
+
+form input{
+    outline:none;
+}
+form label{
+    
+    font-weight:bold;
+    letter-spacing: 0.8px;
+}
+
+button:hover{
+    background-color:rgb(190, 211, 190);
+    box-shadow:rgba(229, 26, 26, 0.15) 0px 15px 25px;
+}
+form p{
+    text-align: center;
+}
+.error-alert{
+    background-color: pink;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:6px 0px;
+    text-align: center;
+    padding:4px;
+}
+.error-alert img{
+    height: 15px;
+    margin-left: 5px;
+}
